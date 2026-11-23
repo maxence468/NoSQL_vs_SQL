@@ -3,7 +3,7 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
-public class Test {
+public class ConnectionPOSTGRESQL {
     public static void main(String[] args) {
         String url = "jdbc:postgresql://localhost:5432/tp18";
         String user = "tp18user";
@@ -22,7 +22,7 @@ public class Test {
 
             // 4. Traiter les résultats
             while (rs.next()) {
-                System.out.println(rs.getString("colonne_1"));
+                System.out.println(rs.getString("nom"));
             }
 
             // 5. Fermer les ressources
