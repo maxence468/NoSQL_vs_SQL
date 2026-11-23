@@ -19,9 +19,7 @@ public class ConnectionPOSTGRESQL {
             // 3. Créer le statement et exécuter la requête
             Statement stmt = conn.createStatement();
 
-
             ResultSet rs = stmt.executeQuery("SELECT * FROM clients");
-
 
             // 4. Traiter les résultats
             while (rs.next()) {
@@ -37,4 +35,4 @@ public class ConnectionPOSTGRESQL {
             e.printStackTrace();
         }
     }
-}   
+}
